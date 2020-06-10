@@ -8,6 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AdMobFree} from '@ionic-native/admob-free/ngx';
+import { FCM } from '@ionic-native/fcm/ngx';
+//import { FirebaseConfig } from '@ionic-native/firebase-config/ngx';
+import { Push, PushObject, PushOptions } from '@ionic-native/push/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +20,10 @@ import { AppComponent } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
+    AdMobFree,
+    FCM,
+    Push,
+  //  FirebaseConfig ,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

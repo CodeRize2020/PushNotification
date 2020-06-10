@@ -1,5 +1,7 @@
 {
   "name": "AdsIonic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
